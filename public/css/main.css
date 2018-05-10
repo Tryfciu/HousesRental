@@ -1,0 +1,73 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #e0e0e0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    height: 8vh;
+    background-color: #333333;
+    font-size: 4vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#header > .item {
+    flex-grow: 1;
+    text-align: center;
+    font-family: "Microsoft YaHei UI Light";
+}
+
+#header > .item > a {
+    color: #e0e0e0;
+}
+
+#header > .item > a:hover {
+    display: block;
+    animation: shake 1s infinite;
+    transition: all 0.8s ease;
+}
+
+#header > .item > a:not(:hover)  {
+    transition: all 0.8s ease;
+}
+
+/* link hover colors */
+
+#header > #link_home > a:hover {
+    color: #5eb5e0;
+}
+
+#header > #link_contact > a:hover {
+    color: #F5871F;
+}
+
+#header > #link_offers > a:hover {
+    color: #4BBB20;
+}
+
+#header > #link_about > a:hover {
+    color: lightslategray;
+}
+
+/* animations */
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate3d(0px,0px,0px);
+    }
+    35% {
+        transform: translate3d(-0.2vh, -0.2vh, -0.2vh);
+    }
+    70% {
+        transform: translate3d(0.2vh, 0.2vh, 0.2vh);
+    }
+}
+

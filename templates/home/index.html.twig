@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block stylesheets %} <link rel="stylesheet" href=" {{ asset("css/home.css") }}">{% endblock %}
+
+{% block body %}
+
+    <div id="wrapper_home">
+        <div id="text_home">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, turpis maximus mattis convallis, purus ante porta ligula, quis venenatis
+            tellus massa non odio. Mauris fringilla ullamcorper sapien ut suscipit. Aliquam vehicula,
+            justo ac efficitur euismod, magna velit eleifend lectus, in aliquam mauris arcu et leo.
+            Etiam ac leo eu nibh molestie pretium non a justo. In quis fringilla enim. Suspendisse
+            auctor magna sit amet magna laoreet, sed tincidunt dui faucibus. Praesent iaculis purus
+            nec consequat pellentesque. Nullam scelerisque aliquam lacinia. Cras eu metus ut orci
+            viverra lobortis non at justo. Suspendisse ut efficitur nisi. Vestibulum vitae eleifend
+            metus. Fusce quis finibus ligula, ac cursus lorem.
+
+            Suspendisse a sagittis arcu. Cras congue, quam at accumsan placerat, mauris erat accumsan
+            eros, non condimentum nisi tellus a dolor. Suspendisse at urna ut ex pharetra gravida eget
+            sit amet ligula. Morbi odio nibh, faucibus sed nisi ac, aliquam posuere erat.
+            Aenean suscipit tempor tristique. Duis suscipit libero at diam faucibus mattis.
+            Sed libero lectus, ornare hendrerit cursus quis, mollis at augue.
+        </div>
+        <input type="button" id="button_home" value="Show the newest offers.">
+        <img src="{{ asset("images/house2.jpg") }}" class="image_house" id="image_placeholder_1">
+        <img src="{{ asset("images/house1.jpg") }}" class="image_house" id="image_placeholder_2">
+    </div>
+
+
+{% endblock %}

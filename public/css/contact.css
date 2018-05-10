@@ -1,0 +1,51 @@
+#wrapper_contact {
+    padding-top: 10vh;
+    padding-left: 30vw;
+}
+
+#text_contact {
+    width: 40vw;
+    height: 30vh;
+    text-align: center;
+    font-size: 2.8vh;
+}
+#form_mail_contact {
+    width: 40vw;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+#form_mail_contact > #input_name {
+    width: 20vw;
+    height: 2.6vh;
+    font-size: 1.9vh;
+    left: 20vw;
+}
+
+#form_mail_contact > #input_content {
+    width: 30vw;
+    height: 20vh;
+    font-size: 1.6vh;
+}
+
+#form_mail_contact > #button_submit {
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    font-size: 1.7vh;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    outline: none;
+    padding: 0.7vh 3vw;
+}
+
+#form_mail_contact > #button_submit:hover {
+    background-color: #333333;
+    color: white;
+    transition: all 1s ease;
+}
+
+#form_mail_contact > #button_submit:not(:hover) {
+    transition: all 1s ease;
+}
+

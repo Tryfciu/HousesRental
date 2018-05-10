@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block stylesheets %} <link rel="stylesheet" href="{{ asset("css/contact.css") }}"> {% endblock %}
+
+{% block body %}
+    <div id="wrapper_contact">
+        <div id="text_contact">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec euismod, turpis maximus mattis convallis, purus ante porta ligula, quis venenatis
+            tellus massa non odio. Mauris fringilla ullamcorper sapien ut suscipit. Aliquam vehicula,
+            justo ac efficitur euismod, magna velit eleifend lectus, in aliquam mauris arcu et leo.
+        </div>
+        <div id="form_mail_contact">
+            Imie: <br> <input type="text" id="input_name"> <br> <br>
+            Treść: <br> <textarea type="text" id="input_content"></textarea><br> <br>
+            <input type="submit" value="Wyślij" id="button_submit" >
+        </div>
+    </div>
+{% endblock %}
