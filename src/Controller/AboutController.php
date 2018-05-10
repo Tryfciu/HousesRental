@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Utils\DatabaseConnection;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -12,8 +13,12 @@ class AboutController extends Controller
      */
     public function index()
     {
+        $connection = new DatabaseConnection();
+
+        $result = $connection->getFeedbackMessages();
+
         return $this->render('about/index.html.twig', [
-            'controller_name' => 'AboutController',
+            "feedbackMessages" => $result
         ]);
     }
 }

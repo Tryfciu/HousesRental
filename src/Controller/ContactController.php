@@ -16,4 +16,9 @@ class ContactController extends Controller
             'controller_name' => 'ContactController',
         ]);
     }
+
+    public function sendFeedback()
+    {
+
+    }
 }
