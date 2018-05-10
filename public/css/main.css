@@ -32,11 +32,11 @@ a {
 #header > .item > a:hover {
     display: block;
     animation: shake 1s infinite;
-    transition: all 0.8s ease;
+    transition: all 0.2s ease;
 }
 
 #header > .item > a:not(:hover)  {
-    transition: all 0.8s ease;
+    transition: all 2.2s ease;
 }
 
 /* link hover colors */

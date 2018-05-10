@@ -3,14 +3,14 @@
 }
 
 .container_message {
-    height: 15vh;
     width: 40vw;
     margin-left: 30vw;
     font-size: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 6vh;
 }
 
 .message_author {
+    display: inline-block;
     font-weight: bold;
     font-size: 3vh;
 }
@@ -19,4 +19,27 @@
     margin-top: 3vh;
     margin-left: 5vw;
     word-break: break-all;
+}
+
+.message_author:hover {
+    color: #F5871F;
+    transition: all 0.05s ease;
+}
+
+.message_author:hover ~ .message_separator{
+    border-color: #F5871F;
+    transition: all 0.05s ease;
+}
+
+.message_author:not(:hover) {
+    transition: all 3s ease;
+}
+
+.message_author:not(:hover) ~ .message_separator{
+    transition: all 1s ease;
+}
+
+.message_separator {
+    display: block;
+    border-color: #e0e0e0;
 }
