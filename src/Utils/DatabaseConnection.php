@@ -35,6 +35,19 @@ class DatabaseConnection
 
         return $messages;
     }
+
+    public function addFeedbackMessage(Feedback $message)
+    {
+        $query = $this->connection->prepare("INSERT INTO users VALUES(NULL, :firstName, :email)");
+        $query->bindValue(":firstName", $message->author, PDO::PARAM_STR);
+        $query->bindValue(":email", "email", PDO::PARAM_STR);
+        $query->execute();
+        $userId = $this->connection->lastInsertId();
+        $query = $this->connection->prepare("INSERT INTO feedback VALUES(NULL, :userId, :content, 0)");
+        $query->bindValue(":userId", $userId, PDO::PARAM_INT);
+        $query->bindValue(":content", $message->content, PDO::PARAM_STR);
+        $query->execute();
+    }
 }
 
 
