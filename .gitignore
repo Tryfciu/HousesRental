@@ -21,3 +21,7 @@
 .idea/**/tasks.xml
 .idea/dictionaries
 
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
